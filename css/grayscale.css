@@ -327,6 +327,11 @@ footer {
   justify-content: center;
 }
 
+#skillheader {
+  font-size: 60px;
+  padding: 5rem 0;
+}
+
 .footer-links{
   font-size: 60px;
 }
@@ -342,10 +347,51 @@ footer {
   width: 60vw;
 }
 
-.skills-li{
+.img-container{
+  margin: 0 5vw 5vw 5vw;
+  position: relative;
   width: 60px;
   height: 60px;
-  margin: 0 5vw 5vw 5vw;
+}
+
+.skills-li {
+  width: 60px;
+  height: 60px;
+  transition: .5s ease;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  z-index: 1000;
+}
+
+.img-container:hover .overlay {
+  opacity: 1;
+}
+
+.img-container:hover .skills-li{
+  opacity: 0.25;
+}
+
+.text {
+  color: Black;
+  font-family: 'Varela Round';
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #centering-div {
