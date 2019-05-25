@@ -177,7 +177,7 @@
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -328,7 +328,7 @@ footer {
 }
 
 #skillheader {
-  font-size: 60px;
+  font-size: 45px;
   padding: 5rem 0;
 }
 
@@ -397,4 +397,9 @@ footer {
 #centering-div {
   display: flex;
   justify-content: center;
+}
+
+#projectheader {
+  font-size: 45px;
+  padding-bottom: 3rem;
 }
